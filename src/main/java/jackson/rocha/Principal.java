@@ -1,17 +1,32 @@
 package jackson.rocha;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Principal {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Cachorro cachorro1 = new Cachorro();
+        cachorro1.nome = "Nala";
+        cachorro1.raca = "Rotwaller";
+        cachorro1.sexo = "F";
+        cachorro1.idade = 2;
+
+        Cachorro cachorro2 = new Cachorro();
+        cachorro2.nome = "Nick";
+        cachorro2.raca = "Pintecher";
+        cachorro2.sexo = "M";
+        cachorro2.idade = 6;
+
+        System.out.println("CACHORRO 1");
+        System.out.println("-----------");
+        System.out.printf("Nome: %s\n", cachorro1.nome);
+        System.out.printf("Raça: %s\n", cachorro1.raca);
+        System.out.printf("Sexo: %s\n", cachorro1.sexo);
+        System.out.printf("Idade: %d\n", cachorro1.idade);
+
+        System.out.println("CACHORRO 2");
+        System.out.println("-----------");
+        System.out.printf("Nome: %s\n", cachorro2.nome);
+        System.out.printf("Raça: %s\n", cachorro2.raca);
+        System.out.printf("Sexo: %s\n", cachorro2.sexo);
+        System.out.printf("Idade: %d\n", cachorro2.idade);
     }
 }
